@@ -26,7 +26,7 @@ ids =select(read.csv('https://raw.githubusercontent.com/chadwickbureau/register/
 NoShiftAB = read.csv('data/NoShiftAB_16-17.csv') %>% select( NSAB = AB, key_fangraphs = playerid)
 TotalAB= read.csv('data/TotalAB_16-17.csv')%>% select(AB,  key_fangraphs = playerid)
 
-#Filter to players with normal alignments >70% of the time
+#Filter to players with normal alignments >25% of the time
 ShiftInfo = full_join(TotalAB, NoShiftAB) %>%
     replace_na(list(AB = 0, NSAB = 0)) %>%
     mutate(PNS = ifelse(AB==0, 1, NSAB/AB)) %>%
