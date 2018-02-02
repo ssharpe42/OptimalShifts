@@ -1,2 +1,2 @@
 # Shifty
-Modeling expected out probabilities and wOBA expectancies with different alignments to come up with unique and effective shifts.
+Modeling expected out probabilities and wOBA expectancies as a function of defensive shifts and trajectory to estimate expected wOBA values given a Statcast hitter profile and possible defensive alignments.
